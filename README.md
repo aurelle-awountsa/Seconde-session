@@ -1,5 +1,6 @@
 <htmml>
      <head> 
+          <meta charset="utf-8">
          <h1> Description du projet de seconde session </h1>
      </head>
      <body>
