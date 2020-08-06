@@ -1,0 +1,40 @@
+ body{
+	 background-image: url("image.jpg");
+	font-size:13px;
+	text-align:center;
+	background-position:center; 
+	font-family:comic sans MS Tohoma, Geneva, Verdana, Sans-serif;
+	background-position: center;
+	margin-top:50px;
+}
+.main{
+
+	margin:auto;
+    height: 700px;
+	width:800px;
+}
+legend{
+	border-style:solid;
+	font-size:18px;
+	background-color: lightgoldenrodyellow;
+	
+}
+#clients{
+	padding-top:15px;
+	padding:10px;
+}
+fieldset{
+	margin-left:25px;
+	margin-top:25px;
+	padding-top:25px;
+	padding-left:30px;
+	
+}
+label{
+	font-size:15px;
+	color: white;
+}
+#bouton:hover,input:hover, select:hover{
+	transform:scale(1.1);
+	color: darkblue;
+}

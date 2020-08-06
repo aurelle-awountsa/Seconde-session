@@ -1,0 +1,61 @@
+<! DOCTYPEHtml>
+
+	<head>
+		<title> FONCTIONNALITES </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script src="js/fonctionnalites.js"></script>
+	</head>
+	<body  >
+	<!-- connaitre le nombre total de client-->
+	<form id="clientTotal">
+		<label> Nombre total de clients:
+			<input type="submit" value="ENVOYER">
+		</label>
+	</form>
+	<div id="affichage2">
+		<p>Le nombre de clients total est de: </p>
+	</div><br><br></br>
+
+	<!--entrer l'id d'une chambre et recevoir les infos-->
+
+	<form id="chambre"  >
+		<fieldset>
+			<label for="chambre"> Numero de chambre: </label>
+			<input type="text" id="idchm" name="chm"  required><br>
+			<input type="submit" value="ENVOYER">
+		</fieldset>
+	</form>
+	<div id="affichage3">
+		<p> ici s'affichera le resultat </p>
+	</div><br><br>
+
+	<!-- entrer la date et recevoir des informations-->
+
+	<form id="entrer" >
+		<fieldset>
+			<label > Date d'entrée: </label>
+			<input type="date" id="date" name="date"  value="" required><br><br>
+			<input type="submit" value="ENVOYER">
+		</fieldset>
+	</form>
+	<div id="affichage1">
+		<p>ici s'affichera le resultat</p>
+	</div><br><br>
+
+	<!-- entrer le nom de l'employé et retourner les chambres  dont il s'occuppe-->
+
+	<form id="idEmployéChambre">
+		<fieldset>
+			<label for="employe">Identité de l'employé:</label>
+			<input type="text" id="idEmployé" name="employé" required > <br>
+			<input type="submit" value="ENVOYER">
+		</fieldset>
+	</form>
+	<div id="affichage4">
+		<p>ici s'affichera le resultat</p>
+	</div><br><br>
+
+
+
+	</body>
+</html>
