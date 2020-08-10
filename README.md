@@ -1,14 +1,7 @@
-
-
-<html>
-     <head> 
-         <h1> Description du projet de seconde session 
-                     Reservation dans un hôtel</h1>
-     </head>
-     <body>
-         <h1> PRESENTATION DE L'EQUIPE </h1>
+ <h1> Description du projet de seconde session Reservation dans un hôtel</h1>
+     <h2> PRESENTATION DE L'EQUIPE </h2>
            <p> Donhoungo Awountsa Aurelle Tilly</p>
-         <h1> DESCRIPTION DU PROJET </h1>
+         <h2> DESCRIPTION DU PROJET </h2>
          <p>  
              Le projet consiste à la réalisation d'une base de données  pour la gestion des reservations d'un hotel de la place. Elle permettra de 
                 connaitre le nombre de clients dans l'hôtel,  de savoir quelles chambres sont vides ou pas lesquelles sont réservées et par qui, 
@@ -70,6 +63,5 @@
                       l'id d'une chambre en paramètre on reçois les informations sur le 
                        client qui l'occupe<br>
                        </p>
- (https://user-images.githubusercontent.com/64193958/89758384-eefbc780-dae7-11ea-946b-e15c3cf24b27.png)
-     </body>
-</html>
+ 
+![diagramme](https://user-images.githubusercontent.com/64193958/89759287-1ce20b80-daea-11ea-80b1-12a94cf73721.png)
