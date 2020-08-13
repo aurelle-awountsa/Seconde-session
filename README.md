@@ -55,7 +55,7 @@
         <li>CREATE SERVICE "enter" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call dateEntré(:dateE); qui prend en paramètre une date et retourne la liste des clients qui sont entrés à cette date<br><br>
     </ul>
 </p>
-![diagramme](https://user-images.githubusercontent.com/64193958/90172123-d4a14280-dda2-11ea-83aa-bef514ccffa3.png)
+
 <h4> Création des tables</h4><br>
 <p>
  création de la table chambre 
@@ -101,6 +101,5 @@ create table catégorie(
     idcatégorie catégorie des chambres,
     prix prix des chambres,
     );
-
-
 </p>
+![diagramme](https://user-images.githubusercontent.com/64193958/90172123-d4a14280-dda2-11ea-83aa-bef514ccffa3.png)
