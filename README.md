@@ -1,67 +1,58 @@
- <h1> Description du projet de seconde session Reservation dans un hôtel</h1>
-     <h2> PRESENTATION DE L'EQUIPE </h2>
-           <p> Donhoungo Awountsa Aurelle Tilly</p>
-         <h2> DESCRIPTION DU PROJET </h2>
-         <p>  
-             Le projet consiste à la réalisation d'une base de données  pour la gestion des reservations d'un hotel de la place. Elle permettra de 
-                connaitre le nombre de clients dans l'hôtel,  de savoir quelles chambres sont vides ou pas lesquelles sont réservées et par qui, 
-                quel employé s'occupe de quelle chambre ,  d'avoir les informations nécessaires concernant les occupants d'une chambre, connaitre les clients qui sont entrés à une date .
-        </p>
-        <h1>ASPECTS IMPLÉMENTES </h1>
-        <p>
-            <u><b> FRONTEND </b></u><br>
-               Nous aurons dans ce projet des pages HTML,jS et CSS<br>
-              -html<br>
-                  * un formulaire qui permettra de récupérer les données du client afin de les insérés dans la base de données 
-                  ces informations remplirons à la fois la tables des clients et celle des reservations<br>
-                  *une page web qui contiendra les photos des chambres de l'hotel   <br>
-                  * une page web qui permettra de visualiser les résultats de différentes requêtes<br> 
-                  *une page d'accueil<br>
-              -Js<br>
-                  *les fichiers js liés à la page d'insertion des clients <br>
-                  * un autre fihier lié à la page  des différentes requêtes<br>
-              - CSS des fichiers css lies au différentes pages html<br>
-         </p>
-         <p>
-            <u><b> BACKEND </b></u><br>
-              Nous aurons un serveur et  une base de données qui contiendront: <br>
-                -Des tables <br>
-                     * la table client qui contiendra les information relatives aux clients<br>
-                         attributs:  numéro de cni (identifiant) clé primaire; nom (nom du client); prénom(prénom du client); sexe(sexe du 
-                        client); date de naissance (date de naissance du client); <br>
-                     * la table reservation qui contiendra la  liste des chambres réservées qui sera liée à la table client et à la table des 
-                              chambres <br>
-                         attributs: resId clé primaire, idChambre(identifiant des chambres) clé primaire et clé secondaire, idClient (identité du client)  
-                        clé étrangère, dateEntrée, dateSortie<br>
-                     * la table employé qui contient les informations relatives aux employés<br>
-                         attributs: numéro de cni (identifiant); nom (nom de l'employé); prénom prénom de l'employé); sexe (sexe de l'employé); 
-                         gsmEmployé( numéro de gsm des employés) ; date de naissance<br>
-                     * la table chambres qui contiendra la liste des chambres de l'hotel<br>
-                         attributs: idChambre clé primaire; idEmployé (identifiant de l'employé qui s'occupe de la chambre)clé étrangère, idCatégorie( 
-                         catégorie de la chambre) clé étrangère, description( description de la chambre)<br>
-                     *la table catégorie qui contiendra les catégorie des chambres <br>
-                         attributs: idCatégorie clé primaire, prix<br>
-               -Des web-services <br>
-               -Des procedures<br>
-         </p> 
-      <<h1> DETAIL DE L'API REST </h1>
-             <p>
-                  <h3> Liste des webServices et leur description </h3>
-                    *testId lié à la procédure testId ne prend rien en paramètre qui permet 
-                       de tester si une chambre est 
-                       déjà occupée dans la base de données et si une personne occupe déjà 
-                      une chambre <br>
-                    * reservation lié à la procédure 
-                      insertReservation(:ID"id du client",:chambre,:dateEntré,:sortie) qui 
-                       permet de récupérer les données du formulaire vers la table des
-                        reservations  <br>
-                    *insertion lié à la procédure 
-                     insertion(:ID,:name,:lastname,:âge,:sex,:gsm) qui récupère les données 
-                     du formulaire d'enregistrement pour les insérées dans la table des 
-                     clients<br>
-                    * chambre lié à la procédure informations(:chambres), qui lorsqu'on met 
-                      l'id d'une chambre en paramètre on reçois les informations sur le 
-                       client qui l'occupe<br>
-                       </p>
- 
-![diagramme](https://user-images.githubusercontent.com/64193958/89759287-1ce20b80-daea-11ea-80b1-12a94cf73721.png)
+<h2> Projet Seconde Session: gestion des reservations d'un hotel</h2>
+
+<h3> PRESENTATION DE L'EQUIPE </h3>
+<p> Donhoungo Awountsa Aurelle Tilly</p>
+<h3> DESCRIPTION DU PROJET </h3>
+<p>
+    Le projet consiste à la réalisation d'une base de données  pour la gestion des reservations des chambres d'un hotel de la place. Elle permettra de:<br>
+<ul>
+    <li> Connaitre le nombre de clients dans l'hôtel
+    <li> Savoir quelles chambres sont vides ou réservées et par qui.
+    <li> Quel employé s'occupe de quelle chambre
+    <li> D'avoir les informations nécessaires concernant les occupants d'une chambre
+    <li> Connaitre les clients qui sont entrés à une date .
+</ul><br><br>
+</p>
+<h3>Aspects Implémentés</h3>
+<p><br>
+    <u> BACKEND :</u> Une base de données permettant de mémoriser les données des reservations des chambres , un serveur fournissant les pages html, css, js et des webservices et leur procédure.
+    <ul>
+        <li>un webservice qu permet d'inserer les données du formulaire dans la tables des clients
+        <li> un webservice qu permet d'inserer les données du formulaire dans la tables des reservations
+        <li> un webservice qui permet d'afficher les prix des prix des chambres
+        <li>un webservice qui permet de changer le statut de la chambre  après son occupation
+        <li> un webservice qui permet de tester l'id du client  avant de l'inserer dans la base de données
+        <li>un webservice qui permet d'afficher les descriptions des chambres sur la page html
+        <li> un webservice qui permet qui permet de renvoyer les chambres disponibles dans le select( côté html)
+        <li> un webservice qui permet qui permet d'envoyer les chambres occupées
+        <li>un webservice qui permet de renvoyé les informations sur le client qui occupe une chambre
+        <li>un webservice qui permet qui permet de renvoyer le nombre de client total
+    </ul>
+</p>
+<p>
+    <u> FRONTEND:</u> Nous avons des pages webs(formulaire d'insertion, page d'acceuil, page des chambres, page des fonctionnalités), js et css qui présente l'interface administrateur ,
+</p>
+
+<h3> Détail de l'api rest </h3>
+<h4> Liste des webServices et leur description </h4>
+<p>
+    <ul>
+        <li> CREATE SERVICE "testID" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHOD 'GET'AS CALL testID. qui permet de tester l'id du client s'il est déjà dans la base de donnée<br><br>
+        <li> CREATE SERVICE "http_updateDisponibilite" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call updateDisponibilite(:ID); qui permet de modifier le statut de la chambre lorsqu'elle est occupée.<br><br>
+        <li> CREATE SERVICE "reservation" TYPE 'RAW' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call insertReservation(:ID,:chambre,:dateEntré,:sortie); qui permet d'inserer une partie des données  du formulaire  dans la table des reservations.<br><br>
+        <li> CREATE SERVICE "insertion" TYPE 'RAW' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call insertion(:ID,:name,:lastname,:âge,:sex,:gsm); qui permet d'inserer une partie des données du formulaire dans la table clients<br><br>
+        <li>CREATE SERVICE "chambre" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON AS call informations(:chambres); qui prend en paramètre l'id d'une chambre et retourne les informations sur le client qui occupe une chambre<br><br>
+        <li> CREATE SERVICE "http_getPrixCategorie" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call getPrixCatégorie(:catId);
+            qui prend en paramètre une catégorie de chambre et retourne son prix<br><br>
+        <li> CREATE SERVICE "http_getEmploye" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call getEmploye(:employes);
+            qui prend en paramètre un employé et retourne les chambres dont ils s'occupent<br><br>
+        <li>CREATE SERVICE "http_getDispo" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call getDispo();
+            qui permet de retourner les chambres vides dans le formulaire<br><br>
+        <li>CREATE SERVICE "http_getDescriptionChambre" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call getDescriptionChambre();
+            qui prend en paramètre une chambre et retourne sa description<br><br>
+        <li>CREATE SERVICE "http_getChambresOccupes" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call getChambresOccupés();
+            qui retourne les chambres occupées<br><br>
+        <li>CREATE SERVICE "enter" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call dateEntré(:dateE); qui prend en paramètre une date et retourne la liste des clients qui sont entrés à cette date<br><br>
+    </ul>
+</p>
+![diagramme](https://user-images.githubusercontent.com/64193958/90172123-d4a14280-dda2-11ea-83aa-bef514ccffa3.png)
