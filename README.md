@@ -1,4 +1,4 @@
-<h2> Projet Seconde Session: gestion des reservations d'un hotel</h2>
+ <h2> Projet Seconde Session: gestion des reservations d'un hotel</h2>
 
 <h3> PRESENTATION DE L'EQUIPE </h3>
 <p> Donhoungo Awountsa Aurelle Tilly</p>
@@ -56,3 +56,51 @@
     </ul>
 </p>
 ![diagramme](https://user-images.githubusercontent.com/64193958/90172123-d4a14280-dda2-11ea-83aa-bef514ccffa3.png)
+<h4> Création des tables</h4><br>
+<p>
+ création de la table chambre 
+
+create table chambre(
+    "idChambre" identifiant de la chambre,
+    "idEmployé" identifiant de l'employé qui s'occupe de la chambre,
+    "idcatégorie" catégorie de la chambre,
+    "description" description de la chambre,
+);
+ création de la table employés
+
+CREATE TABLE employés(
+    idEmployé "identifiant de lemmployé,
+    "nomEployé" nom de l'employé,
+    "prenomEmployé prénom de l'employé,
+    sexeEmployé" sexe de l'employé,
+    "dnEmploye" date de naissance de l'employé,
+    "gsmEmployé" numéro de gsm de l'employé ,
+);
+
+création de la table clients 
+
+CREATE TABLE clients(
+    "idClient" identifiant du client,
+    "nomClient" nom du client,
+    "prenomClient" prénom du client,
+    "sexeClient" sexe du client,
+    "age" âge du client,
+    "gsmClient" numéro de gsm du client,
+    );
+création de la table reservation
+
+CREATE TABLE reservation(
+    "idClient" identifiant du client,
+    "idChambre" identifiant de la chambre,
+    "dateReservation" date de reservation de la chambre,
+    );
+
+création de la table catégorie
+
+create table catégorie(
+    idcatégorie catégorie des chambres,
+    prix prix des chambres,
+    );
+
+
+</p>
