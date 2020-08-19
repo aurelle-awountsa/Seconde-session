@@ -34,8 +34,10 @@ BEGIN
     Call sa_set_http_header('Access-Control-Allow-Origin', '*');
     call sa_set_http_header( 'Content-Type', 'text/html' );
 	SELECT  re.idChambre, ch.idcatégorie
+   SELECT  re.idChambre, ch.idcatégorie
     FROM  chambre ch
-    join  reservation re
+    join reservation re
+    WHERE ch.disponibilite = 0
 
 END
 
