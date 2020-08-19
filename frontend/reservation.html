@@ -1,0 +1,76 @@
+
+<html>
+	<head>
+		<title> Reservation </title>
+		<link rel="stylesheet" href="css/reservation.css">
+		<script src="js/reservation.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+       
+	</head>
+
+	<body id="Reservation"  onload="dispo()"  >
+
+	<div id="nav">
+		<h1>RESERVATION</h1>
+	<nav class="nav">
+		<h2><a href="http://localhost:180/html?url=accueil" ><img src="https://img.icons8.com/ios-filled/50/000000/home.png" height="20px">Accueil</a>   |
+			<a href="http://localhost:180/html?url=Chambre"><img src="https://img.icons8.com/ios-filled/50/000000/bed.png" height="20px">Chambres</a>     |
+			<a href="http://localhost:180/html?url=reservation"><img src="https://img.icons8.com/metro/26/000000/literature.png" height="20px">Réservation</a>    |
+			<a href="http://localhost:180/html?url=fonctionnalites"><img src="https://img.icons8.com/metro/50/000000/list.png" height="20px">Fonctionnalités</a>
+
+		</h2>
+	</nav>
+	</div>
+
+
+		<div class="main">
+			<form id="clients" name="formulaire">
+
+					<legend id="legende"> <b> FORMULAIRE D'ENREGISTREMENT </b> </legend><br>
+					
+					<!--id-->
+						<label for="id"> Numéro de CNI: </label>
+						<input type="text" id="idClient" name="Client"   required><br><br>
+					<!--nom-->
+						<label for="nom"> Nom: </label>
+						<input type="text" id="idnom" name="nom" value="" required><br><br>
+					<!--prenom-->
+						<label for="prenom"> Prénom: </label>
+						<input type="text" id="idprenom" name="prenom" value="" required><br><br>
+						<!--sexe-->
+						<input type="radio" id="idsexef" name="sexe" value="F" required>
+						<label for="sexe"> Madame </label>
+						<input type="radio" id="idsexeh" name="sexe" value="M" required>
+						<label for="sexe"> Monsieur </label><br><br>
+					<!--date naissance-->
+						<label for="age"> Âge:</label>
+						<input type="number" id="idAge" name="âge" required  min="19"><br><br>
+					
+					<!--GSM-->
+						<label for="gsm">GSM:</label>
+						<input type="text"   name="gsm" id="idgsm" required ><br><br>
+						
+					<!-- numero de chambre-->
+						<label for="CHAMBRE"> Numero De Chambre:</label>
+				<select id="chbm" name="chbm" type="text" class="chambre">
+
+				</select><br><br>
+				
+					<!--entrée-->
+						<label for="dateEntrée"> Date D'entrée: </label>
+						<input type="date" id="iddateEnt" name="dateEnt" required ><br><br>
+
+					<!-- date sorti-->
+						<label for="sortie"> Date de sortie: <label>
+						<input type="date" id="idSortie" name="sortie" value="" required ><br><br><br>
+					
+					<!--bouton-->
+					<input type="submit"   id="bouton"value="ENREGISTRER LE CLIENT">
+
+			</form><br><br><br>
+		
+
+		</div><br>
+
+	</body>
+</html>

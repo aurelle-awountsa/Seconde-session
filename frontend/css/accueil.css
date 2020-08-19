@@ -1,0 +1,14 @@
+body{
+    background-color: grey;
+    text-align: center;
+
+}
+a:hover{
+    transform:scale(1.1);
+    color: darkblue;
+}
+h1{
+    text-align : center;
+    color : #4682B4;
+    font-family: Times, serif;
+}

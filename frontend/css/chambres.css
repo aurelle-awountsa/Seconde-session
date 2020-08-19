@@ -1,0 +1,36 @@
+body{
+
+    background-color: indigo;
+    font-size:13px;
+    text-align:center;
+    background-position: initial;
+    font-family:comic sans MS Tohoma, Geneva, Verdana, Sans-serif;
+    margin-top:70px;
+    top: 90px;
+}
+img{
+    border-radius:5px;
+    font-size:15px;
+    box-shadow:5px 5px 20px rgba(0,0,0,5);
+    cursor:pointer;
+    outline:none;
+    margin-left:20px;
+
+
+}
+h2:hover, p:hover, h1:hover, a:hover{
+    font-family: Sans-serif;
+    transform:scale(1.1);
+    color: aqua;
+}
+
+#page{
+    background-color: #cccccc;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+}
+.page a{
+    color: aqua;
+    font-size: 15px;
+}

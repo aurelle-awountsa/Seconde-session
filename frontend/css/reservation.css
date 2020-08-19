@@ -1,0 +1,79 @@
+ body{
+	 background-color: indigo;
+	 background-size:cover;
+	 background-position:center;
+	 background-position: center;
+	 font-size:13px;
+	 font-family:comic sans MS Tohoma, Geneva, Verdana, Sans-serif;
+	text-align:center;
+	margin-top:50px;
+	 padding:0;
+
+}
+h1{
+	margin:0;
+	padding:0 0 20px;
+	text-align:center;
+	front-size:22px;
+	text-color: bisque;
+}
+
+ .main{
+	 width:500px;
+	 height:650px;
+	 color:#fff;
+	 top:85%;
+	 left:50%;
+	 border:1px groove black;
+	 position: relative;
+	 transform:translate(-50%, -70%);
+	 box-sizing:border-box;
+	 padding:70px 30px;
+	 text-align:center;
+
+ }legend{
+	border-style:solid;
+	font-size:18px;
+	background-color: lightgoldenrodyellow;
+	
+}
+#clients{
+	padding-top:15px;
+	padding:10px;
+}
+fieldset{
+	margin-left:25px;
+	margin-top:25px;
+	padding-top:25px;
+	padding-left:30px;
+	
+}
+label{
+	font-size:15px;
+	color: white;
+	text-decoration: lightgoldenrodyellow;
+}
+#bouton:hover,input:hover, select:hover, h1:hover{
+	transform:scale(1.1);
+	color: darkblue;
+
+}
+
+ input[type="text"], input[type="number"], input[type="date"], select, legend{
+	 border:none;
+	 border-bottom:1px solid #fff;
+	 background: transparent;
+	 outline:none;
+	 height:40px;
+	 color:#fff;
+	 front-size:16px;
+ }
+ div{
+	 text-align: center;
+ }
+ #nav, #fontions{
+	 background-color: #cccccc;
+	 height: 150px;
+	 width: 100%;
+	 text-align: center;
+ }
