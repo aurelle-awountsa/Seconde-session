@@ -5,29 +5,38 @@ document.addEventListener('DOMContentLoaded',InitPage)
 function InitPage(){
     document.getElementById('clients').addEventListener('submit',valider);
 }
+
 function valider() {
     event.preventDefault();
-    //let today = new Date();
-   // let todayConvert = Date.parse(today);
-   // console.log('today'+"  "+todayConvert);
-    let d1 = Date.parse(document.getElementById("iddateEnt").value);
-    let d2 = Date.parse(document.getElementById("idSortie").value) ;
-    console.log('d1'+"  "+d1);
-    console.log('d2'+"  "+d2);
-    //if(d1 < todayConvert){
-      //  alert("La date de début ne peut être inférieure à la du jour");
-   // }
-   // else{
-        if(d2 < d1){
-            alert("La date de sortie ne peut être inférieure à la date d'entrée");
+    let today = new Date();
+    let today_formatte_date = today.getFullYear()  + (today.getMonth() + 1) + today.getDate();
+    let dateEntré = document.getElementById("iddateEnt").value;
+    let dateSortie = document.getElementById("idSortie").value;
+    console.log(today_formatte_date);
+    let som_dateEntréYear = dateEntré[0]+dateEntré[1]+dateEntré[2]+dateEntré[3];
+    console.log(som_dateEntréYear);
+    let som_dateEntréMonth = dateEntré[5]+dateEntré[6];
+    console.log(som_dateEntréMonth);
+    let som_dateEntréDay = dateEntré[8]+dateEntré[9];
+    console.log(som_dateEntréDay);
+    let dateInput = Number(som_dateEntréYear) + Number(som_dateEntréMonth) + Number(som_dateEntréDay);
+    console.log(dateInput);
+    if( dateInput < today_formatte_date){
+        alert("Veuiller corriger la date de debut svp");
+    }
+    else{
+        if (dateSortie < dateEntré){
+            alert('veuillez corriger la date de sortie svp')
         }
         else{
             envoyerInformation();
             insertReservation();
             etatDisponibilite();
         }
-    //}
+    }
+    console.log(dateEntré);
 }
+
     //cette fonction permet d'inserer les données du formulaire dans la tables des clients
 
     function envoyerInformation() {
@@ -89,20 +98,3 @@ function selectDynamique(data){
 
 }
 
-// tester la date d'entrée
-
-/*test des dates
-         function date() {
-             let todayYear = new Date().getFullYear();
-             let todayMonth = new Date().getMonth()+1;
-             let todayDate = new Date().getDate();
-
-             let dateEntre = document.getElementById('iddateEnt').value;
-             if (Number(dateEntre[0]+dateEntre[1]+dateEntre[2]+dateEntre[3]) >= todayYear && Number( dateEntre[5]+dateEntre[6]) >= todayMonth && Number(dateEntre[8]+dateEntre[9]) >= todayDate) {
-
-                 console.log('date correcte');
-             }
-
-         }
-
-	*/
