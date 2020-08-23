@@ -38,7 +38,15 @@ function valider() {
 }
 
     //cette fonction permet d'inserer les données du formulaire dans la tables des clients
-
+/**
+*Fonction qui envoie les données du foemulaires dans la table clients de la base de données
+ *elle recupère les données (id, nom, prenom, sexe, age, numéro de gsm) du client et les envoies dans la base de données
+ * 
+ * @example
+ * // "ID:394055022, name:awountsa, lastname: aurelle, sex:F, âge:19, gsm:+32485520688"
+ * 
+ * @param aucun
+ */
     function envoyerInformation() {
 
         let form = document.getElementById('clients');
@@ -51,7 +59,15 @@ function valider() {
     }
 
     //cette fonction permet d'inserer les données du formulaire dans la tables des reservations
-
+/**
+ *Fonction qui envoie les données du foemulaires dans la table reservation de la base de données
+ *elle recupère les données (id, chambre, dateEntré, sortie) du client et les envoies dans la base de données
+ *
+ * @example
+ * // "ID:394055022, chambre:CHM05, dateEntré:23-08-2020, sortie:25-08-2020"
+ *
+ * @param aucun
+ */
     function insertReservation() {
 
         let xhr = new XMLHttpRequest();
