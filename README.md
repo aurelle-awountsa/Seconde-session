@@ -53,6 +53,8 @@
         <li>CREATE SERVICE "http_getChambresOccupes" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call getChambresOccupés();
             qui retourne les chambres occupées<br><br>
         <li>CREATE SERVICE "enter" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call dateEntré(:dateE); qui prend en paramètre une date et retourne la liste des clients qui sont entrés à cette date<br><br>
+         <li>CREATE SERVICE "http_getLiberationChambre" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON AS select getLibérationChambre(); qui permet de changer le statut de la chambre après sa libération 
+
     </ul>
 </p>
 <h4> Création des tables</h4><br>
