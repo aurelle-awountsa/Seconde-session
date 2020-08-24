@@ -166,3 +166,13 @@ function chambreOccupé(e){
     }
     xhr.send();
 }
+// libération des chambres
+
+function libérationChambre(){
+let xhr = new XMLHttpRequest();
+xhr.open('get', 'http://localhost:180/http_getLiberationChambre', true);
+xhr.onload = function (){
+    alert('chambre libérée');
+}
+xhr.send();
+}
