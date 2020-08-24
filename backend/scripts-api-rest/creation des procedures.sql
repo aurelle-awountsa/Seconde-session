@@ -1,4 +1,22 @@
-﻿// créer la procédure qui renvoie la description des chambres
+//créer la fonction qui permet de changer le statut de la chambre après la liberaion
+CREATE FUNCTION "DBA"."getLibérationChambre"()
+RETURNS INTEGER
+BEGIN
+
+  DECLARE liberation date;
+  SET liberation = (
+    SELECT CURRENT DATE 
+    );
+    Call sa_set_http_header('Access-Control-Allow-Origin', '*');
+            call sa_set_http_header( 'Content-Type', 'text/html' );
+  
+	UPDATE  chambre ch join reservation re
+    set ch.disponibilite = 1
+    WHERE  re.dateFin = liberation
+END;
+
+
+// créer la procédure qui renvoie la description des chambres
 
 CREATE PROCEDURE "DBA"."getDescriptionChambre"( )
  RESULT(chambre char(100), descrip LONG VARCHAR  )
@@ -153,15 +171,6 @@ BEGIN
     ORDER BY idChambre
 END;
 
-//permet de changer le statut de la chambre après la liberaion
-CREATE PROCEDURE "DBA"."getLiberation"(  )
-BEGIN
-     Call sa_set_http_header('Access-Control-Allow-Origin', '*');
-   call sa_set_http_header( 'Content-Type', 'text/html' );
-	UPDATE  chambre ch
-    set ch.disponibilité = 0
-    WHERE dateFin = CURRENT DATE
-END;
 
 // permet de modifier le statut la chambre avant son occupation
 CREATE PROCEDURE "DBA"."updateDisponibilite"( ID char(100) )
